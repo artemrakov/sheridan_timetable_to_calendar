@@ -17,9 +17,6 @@ class Table
   end
 
   def header_columns
-    # removing useless time header
-    header.ths.shift
-
     ths = header.ths
     ths[1..ths.length]
   end
