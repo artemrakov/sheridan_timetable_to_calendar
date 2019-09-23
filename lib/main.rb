@@ -22,4 +22,4 @@ cols = browser.table(class: 'PSLEVEL1GRIDNBO').tbody.tr.ths
 
 table = Table.new(rows: rows, cols: cols)
 
-p table.dates
+p table.lessons

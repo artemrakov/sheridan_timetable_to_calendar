@@ -46,3 +46,5 @@ Metrics/BlockLength:
     - 'spec/**/*.rb'
 Style/ClassAndModuleChildren:
   Enabled: false
+Style/ParallelAssignment:
+  Enabled: false
