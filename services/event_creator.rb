@@ -1,6 +1,8 @@
-require_relative 'calendar'
+require './models/calendar'
 
 class EventCreator
+  TIMEZONE = 'America/Toronto'
+
   def initialize(lessons)
     @lessons = lessons
   end
@@ -21,10 +23,12 @@ class EventCreator
     {
       summary: "#{lesson.name} #{lesson.location}",
       start: {
-        date_time: lesson.start_time.to_s
+        date_time: lesson.start_time.to_s,
+        time_zone: TIMEZONE
       },
       end: {
-        date_time: lesson.end_time.to_s
+        date_time: lesson.end_time.to_s,
+        time_zone: TIMEZONE
       }
     }
   end

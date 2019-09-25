@@ -1,7 +1,7 @@
 require './models/lesson'
 
 class LessonParser
-  TIME_ZONE = '+04:00'
+  TIME_ZONE = '-04:00'
   attr_reader :data, :day_of_the_week
 
   def initialize(string, day_of_the_week)
