@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
+require 'webdrivers/chromedriver'
 Bundler.require
 Dotenv.load
 require './models/calendar'
